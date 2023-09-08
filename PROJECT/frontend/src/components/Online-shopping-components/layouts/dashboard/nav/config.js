@@ -21,26 +21,7 @@ const navConfig = [
     path: '/productList',
     icon: icon('ic_cart'),
   },
-  {
-    title: 'Inventory',
-    path: '/inventory_home',
-    icon: icon('ic_blog'),
-  },
-  {
-    title: 'Trainer',
-    path: '/Trainer_home',
-    icon: icon('ic_blog'),
-  },
-  {
-    title: 'Doctor',
-    path: '/Doctor_register',
-    icon: icon('ic_blog'),
-  },
-  {
-    title: 'payment',
-    path: '/paymenttt',
-    icon: icon('ic_blog'),
-  },
+ 
   
  
 ];

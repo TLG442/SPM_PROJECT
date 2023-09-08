@@ -23,7 +23,8 @@ import PaymentMethodScreen from "../../pages/Shop_pages/PaymentMethodScreen";
 import PlaceOrderScreen from "../../pages/Shop_pages/PlaceOrderScreen";
 
 
-
+import Clothings from "../../pages/clothings_pages/Clothings";
+import ChatBot from "../../pages/chatBot/ChatBot";
 
 
 
@@ -78,7 +79,8 @@ function AnimatedRoutes() {
         <Route path="/payment" element={<PaymentMethodScreen />}></Route>
         <Route path="/placeorder" element={<PlaceOrderScreen />} />
 
-      
+        <Route path="/clothings" element={<Clothings />} />
+        <Route path="/ChatBot" element={<ChatBot />} />
         {/* <Route path="/order/:id" element={<OrderScreen />}></Route> */}
 
         <Route path="/order" element={<OrderScreen />}></Route>

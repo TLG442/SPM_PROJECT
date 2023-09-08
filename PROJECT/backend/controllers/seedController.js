@@ -1,11 +1,11 @@
 const Product = require("../models/orderModel");
-
+const User = require("../models/UserModel");
 const mongoose = require('mongoose')
 const data =require( "../data.js")
 const  setproducts = async(req , res) => {
   
-    const createProducts = await Product.insertMany(data.products);
-    res.send({createProducts})
+  await User.remove({});
+  const createdUsers = await User.insertMany(data.users);
 
 }
 module.exports = {

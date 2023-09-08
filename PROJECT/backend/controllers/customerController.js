@@ -51,9 +51,11 @@ const register = async (req, res) => {
   const user = new customerModel({
     name: name,
     email: email,
+    username:"ttrs",
     password: bcryptt.hashSync(password),
     profile: profile,
     isCustomer: true,
+    
   });
   // Check if the user already exists in the database
   const existingUser = await customerModel.findOne({

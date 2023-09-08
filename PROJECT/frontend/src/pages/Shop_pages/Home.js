@@ -2,7 +2,7 @@ import React, { useEffect, useReducer, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import axios from 'axios'
 import logger from 'use-reducer-logger'
-import videoBgg from "../../assets/videos/1.3.mp4"
+import videoBgg from "../../assets/videos/77.mp4"
 import "./Home.css"
 import  Row  from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'

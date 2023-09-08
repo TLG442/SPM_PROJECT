@@ -24,7 +24,7 @@ import SearchBox from "../../pages/Shop_pages/SearchBox";
 
 import { createContext } from "react";
 import AnimatedRoutes from "./AnimatedRoutes";
-import Logo from "../../Images/Logo.png";
+import Logo from "../../Images/33.jpg";
 import Router from "./routes";
 export const ThemeContext = createContext(null);
 
@@ -71,8 +71,8 @@ function Navigation() {
               {" "}
               <img
                 src={Logo}
-                width="300px"
-                height="40"
+                width="200px"
+                height="20"
                 className="d-inline-block align-top"
                 id="nav_img"
               />{" "}
@@ -122,46 +122,19 @@ function Navigation() {
               </NavDropdown>
             )}
 
-            {userInfo && userInfo.isCoach && (
-              <NavDropdown title="Trainer" id="admin-nav-dropdown">
-                <LinkContainer to="/dash">
-                  <NavDropdown.Item>DashBoard</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/wpage">
-                  <NavDropdown.Item>Workouts</NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
-            )}
+           
             {userInfo && userInfo.isCustomer && (
               <NavDropdown title="Services" id="admin-nav-dropdown">
-                <LinkContainer to="/Doctor_home">
-                  <NavDropdown.Item>make an appointment</NavDropdown.Item>
+                <LinkContainer to="/ChatBot">
+                  <NavDropdown.Item>Ai Chatbot</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to={`/myDoctor_appointments/${userInfo._id}`}>
-                  <NavDropdown.Item>my appointments</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to={`/fitness_home/${userInfo._id}`}>
-                  <NavDropdown.Item>Fitness home</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/trainerAD">
-                  <NavDropdown.Item>Contact Trainer</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to="/nutrition_home">
-                  <NavDropdown.Item>Nutrition home</NavDropdown.Item>
+                <LinkContainer to="/clothings">
+                  <NavDropdown.Item>Fashion Trends</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
             )}
 
-            {userInfo && userInfo.isDoctor && (
-              <NavDropdown title="Doctor" id="admin-nav-dropdown">
-                <LinkContainer to="/Doctor_appointmentsList">
-                  <NavDropdown.Item>Appointments</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer to={`/updateDoctorInfo/${userInfo._id}`}>
-                  <NavDropdown.Item>Update doctor profile</NavDropdown.Item>
-                </LinkContainer>
-              </NavDropdown>
-            )}
+          
           </Nav>
         </Container>
       </Navbar>

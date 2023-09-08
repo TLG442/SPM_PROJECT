@@ -1,8 +1,14 @@
 const express = require("express");
+const data = require("../../data")
+const User = require("../../models/UserModel")
 
-const { setproducts } = require("../../controllers/seedController.js");
 
 const seedRouter = express.Router();
-seedRouter.post("/", setproducts);
+seedRouter.get('/', async (req, res) => {
+   
+   
+    const createdUsers = await User.insertMany(data.users);
+    res.send({ createdUsers });
+  });
 
 module.exports = seedRouter;

@@ -3,7 +3,7 @@ import BannerBackground from "../../assets/images/home-banner-background.png";
 import BannerImage from "../../assets/images/home-banner-image.png";
 import { Link } from "react-router-dom";
 import "./homepage.css";
-import videoBg from "../../assets/videos/1.2.mp4";
+import videoBg from "../../assets/videos/55.mp4";
 
 const Home = () => {
   return (
@@ -17,10 +17,10 @@ const Home = () => {
             </div>
             <div className="home-text-section">
               <h1 className="primary-heading" style={{ color: "white" }}>
-                FlexFitness Gyms
+                Virtual Vogue
               </h1>
               <p className="primary-text" style={{ color: "white" }}>
-                Welcome to our Flex Fitness Gym management system .
+              Experience the future of fashion with our virtual dressing room .
               </p>
               <div id="button-container">
                 <div class="button-column">

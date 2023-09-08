@@ -1,6 +1,6 @@
 import "bulma/css/bulma.min.css";
 
-import {BrowserRouter}from 'react-router-dom';
+import {BrowserRouter, Routes, Route}from 'react-router-dom';
 
 
 import 'react-toastify/dist/ReactToastify.css'
@@ -15,7 +15,9 @@ import Router from './components/Online-shopping-components/routes'
 import { useContext } from "react";
 import { Store } from "./components/Online-shopping-components/Store";
 import Home from "./pages/Home";
-
+import Canvas from './canvas'
+import Customizer from './pages/Customizer'
+import HomeLayout from "./HomeLayout";
 function App() {
   //header
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -26,10 +28,16 @@ return(
     <BrowserRouter>
   
       
-    
+  <Routes >
+       
+        
+       <Route path = "/homeee" element = {<HomeLayout/>}/>
+  
+      </Routes>
+     
    <Navigation/>
    <Router/>
-  <Home/>
+  
 
 
 

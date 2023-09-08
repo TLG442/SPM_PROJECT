@@ -101,30 +101,7 @@ function AdminDashBoard() {
                 </Card.Body>
               </Card >
             </Col>
-            <Col md={3}>
-              <Card className='custom-card'>
-                <Card.Body>
-                  <Card.Title>
-                    {summary.trainers && summary.trainers[0]
-                      ? summary.trainers[0].numUsers
-                      : 0}
-                  </Card.Title>
-                  <Card.Text>Trainers</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={3}>
-              <Card className='custom-card'>
-                <Card.Body>
-                  <Card.Title>
-                    {summary.Doctors && summary.Doctors[0]
-                      ? summary.Doctors[0].numUsers
-                      : 0}
-                  </Card.Title>
-                  <Card.Text>Doctors</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+           
            
             <Col md={3}>
               <Card className='custom-card'>

@@ -43,7 +43,7 @@ const userSchema = new mongoose.Schema(
   username: {
     type: String,
     require: [false, "Please provide unique Username"],
-    unique: [true, "Username Exists"],
+   
   },
 
   password: {

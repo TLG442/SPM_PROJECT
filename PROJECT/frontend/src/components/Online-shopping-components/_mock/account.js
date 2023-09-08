@@ -1,7 +1,7 @@
 // ----------------------------------------------------------------------
 
 const account = {
-  displayName: "Flex Fitness",
+  displayName: "Virtual Vogue",
   email: "demo@minimals.cc",
   photoURL: "../../../assets/images/icon.png",
 };

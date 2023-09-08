@@ -180,11 +180,9 @@ function CreateProduct() {
      
       <Form.Group >
       <p id = "form-labell">Brand</p>
-        <Form.Select onChange={handlebrandChange}>
-          <option value="Brand1">Brand1</option>
-          <option value="Brand2">Brand2</option>
-          <option value="Brand3">Brand3</option>
-        </Form.Select>
+      <Form.Control type="text"  onChange={(event) => {
+            setbrand(event.target.value)
+        }} required />
       </Form.Group>
       
       <Form.Group className="mb-3">
