@@ -17,7 +17,7 @@ import { Document, Page, Text, View, StyleSheet, PDFViewer,Image } from '@react-
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import {useReactToPrint} from "react-to-print"
 import { message } from 'antd';
-import BannerImage from "../../assets/images/home-banner-image.png";
+import BannerImage from "../../Images/33.jpg";
 import "./Home.css"
 // import jsPDF from 'jspdf'
 // import 'jspdf-autotable'
@@ -160,7 +160,7 @@ paddingBottom:'20px'
         style={styles.logo}
         source={ BannerImage }
       />
-          <Text style={styles.headerText}>Flex Fitness</Text>
+          <Text style={styles.headerText}>Virtual Vogue</Text>
           <Text>Private limited</Text>
           <Text>{currentDate}</Text>
           <View  style={[styles.cell, styles.headerCell,styles.pad]}>

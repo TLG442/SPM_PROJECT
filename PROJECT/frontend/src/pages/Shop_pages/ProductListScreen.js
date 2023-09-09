@@ -141,7 +141,7 @@ const MyDocument = () => (
   <Document>
     <Page style={styles.page}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Flex Fitness</Text>
+        <Text style={styles.headerText}>Virtual Vogue</Text>
         <Text>Private limited</Text>
       </View>
       <View style={styles.table}>
